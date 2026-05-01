@@ -13,7 +13,7 @@ const fadeUp = {
 }
 
 const featuredProjects = [
-  { title: 'R—K', category: 'Identity + Art Direction', year: '2026', slug: '/archives/r-k' },
+  { title: 'A—P', category: 'Identity + Art Direction', year: '2026', slug: '/archives/r-k' },
   { title: 'Prop Films', category: 'Exploration', year: '2025', slug: '/archives/prop' },
   { title: 'Buyt Bags', category: 'Web Development', year: '2025', slug: '/archives/buyt' },
 ]
@@ -287,10 +287,10 @@ export default function ServicePage({ variant }: Props) {
             viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.2 }}
           >
             <a
-              href="mailto:work@raviklaassens.com"
+              href="mailto:work@adityaprasanna.com"
               className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200 border-b border-transparent hover:border-foreground pb-px"
             >
-              work@raviklaassens.com →
+              work@adityaprasanna.com →
             </a>
             <a
               href="tel:+31630951453"

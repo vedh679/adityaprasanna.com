@@ -42,7 +42,7 @@ export default function Hero() {
           animate="visible"
           variants={fadeUp}
         >
-          Ravi Klaassens.
+          Aditya Prasanna.
         </motion.h1>
         <motion.h1
           className="text-[clamp(2.8rem,8vw,8rem)] font-light leading-[1.05] tracking-tight text-foreground"

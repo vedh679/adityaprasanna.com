@@ -7,7 +7,7 @@ const items = [
   '·',
   'For those who refuse to settle',
   '·',
-  'R—K',
+  'A—P',
   '·',
   'Identity',
   '·',

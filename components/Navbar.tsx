@@ -38,7 +38,7 @@ export default function Navbar() {
           href="/"
           className="text-sm font-medium tracking-widest text-foreground hover:text-muted transition-colors duration-200"
         >
-          R—K
+          A—P
         </Link>
 
         {/* Desktop nav links */}
@@ -62,7 +62,7 @@ export default function Navbar() {
           </span>
           <div className="flex items-center gap-4">
             <a
-              href="https://www.instagram.com/raviklaassens"
+              href="https://www.instagram.com/adityaprasanna"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200"
@@ -70,7 +70,7 @@ export default function Navbar() {
               IG
             </a>
             <a
-              href="https://www.linkedin.com/in/raviklaassens"
+              href="https://www.linkedin.com/in/adityaprasanna"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200"
@@ -107,7 +107,7 @@ export default function Navbar() {
             ))}
             <li className="pt-2 border-t border-[#1a1a1a] flex gap-6">
               <a
-                href="https://www.instagram.com/raviklaassens"
+                href="https://www.instagram.com/adityaprasanna"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors"
@@ -115,7 +115,7 @@ export default function Navbar() {
                 Instagram
               </a>
               <a
-                href="https://www.linkedin.com/in/raviklaassens"
+                href="https://www.linkedin.com/in/adityaprasanna"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors"

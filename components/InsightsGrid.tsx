@@ -6,7 +6,7 @@ import Link from 'next/link'
 const articles = [
   {
     slug: '/insights/the-r-k-brand',
-    title: 'Creation of the R—K brand',
+    title: 'Creation of the A—P brand',
     category: 'Insight',
     date: 'Mar 19, 2026',
     number: 'N°1',
@@ -20,7 +20,7 @@ const articles = [
   },
   {
     slug: '/insights/process-of-a-r-k-project',
-    title: 'Process of a R—K project',
+    title: 'Process of an A—P project',
     category: 'Insight',
     date: 'Mar 2026',
     number: 'N°2',

@@ -1,7 +1,7 @@
 import ServicePage from '@/components/ServicePage'
 
 export const metadata = {
-  title: 'For Agencies | R—K',
+  title: 'For Agencies | A—P',
   description: 'Design & Development Partner for Creative Agencies.',
 }
 

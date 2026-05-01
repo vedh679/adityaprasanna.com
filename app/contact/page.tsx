@@ -53,14 +53,14 @@ export default function ContactPage() {
         <div className="max-w-site mx-auto grid grid-cols-1 md:grid-cols-2 gap-px bg-[#1a1a1a]">
 
           <motion.a
-            href="mailto:work@raviklaassens.com"
+            href="mailto:work@adityaprasanna.com"
             className="group bg-[#0a0a0a] p-10 md:p-14 flex flex-col justify-between gap-16 hover:bg-[#111] transition-colors duration-300"
             custom={0} initial="hidden" animate="visible" variants={fadeUp}
           >
             <span className="text-2xs tracking-widest uppercase text-muted">Email</span>
             <div>
               <p className="text-2xl md:text-3xl font-light text-foreground group-hover:text-white transition-colors duration-200 break-all">
-                work@raviklaassens.com
+                work@adityaprasanna.com
               </p>
               <p className="text-xs text-muted mt-3 tracking-wide">
                 Preferred for new projects & briefs →
@@ -141,7 +141,7 @@ export default function ContactPage() {
             viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }}
           >
             <a
-              href="https://www.instagram.com/raviklaassens"
+              href="https://www.instagram.com/adityaprasanna"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200 border-b border-transparent hover:border-foreground pb-px"
@@ -149,7 +149,7 @@ export default function ContactPage() {
               Instagram →
             </a>
             <a
-              href="https://www.linkedin.com/in/raviklaassens"
+              href="https://www.linkedin.com/in/adityaprasanna"
               target="_blank"
               rel="noopener noreferrer"
               className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200 border-b border-transparent hover:border-foreground pb-px"

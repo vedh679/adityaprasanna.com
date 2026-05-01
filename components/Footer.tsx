@@ -12,7 +12,7 @@ export default function Footer() {
               href="/"
               className="text-sm font-medium tracking-widest text-foreground hover:text-muted transition-colors duration-200"
             >
-              R—K
+              A—P
             </Link>
             <p className="text-xs text-muted tracking-wide max-w-xs">
               Design & Code for those who refuse to settle.
@@ -40,10 +40,10 @@ export default function Footer() {
           {/* Right: contact + socials */}
           <div className="flex flex-col gap-3">
             <a
-              href="mailto:work@raviklaassens.com"
+              href="mailto:work@adityaprasanna.com"
               className="text-xs tracking-wide text-muted hover:text-foreground transition-colors duration-200"
             >
-              work@raviklaassens.com
+              work@adityaprasanna.com
             </a>
             <a
               href="tel:+31630951453"
@@ -53,7 +53,7 @@ export default function Footer() {
             </a>
             <div className="flex gap-4 pt-2">
               <a
-                href="https://www.instagram.com/raviklaassens"
+                href="https://www.instagram.com/adityaprasanna"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200"
@@ -61,7 +61,7 @@ export default function Footer() {
                 Instagram
               </a>
               <a
-                href="https://www.linkedin.com/in/raviklaassens"
+                href="https://www.linkedin.com/in/adityaprasanna"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200"
@@ -75,7 +75,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-[#1a1a1a] flex flex-col md:flex-row justify-between gap-2">
           <span className="text-xs text-muted tracking-wide">
-            ©2026 R—K. All rights reserved.
+            ©2026 A—P. All rights reserved.
           </span>
           <span className="text-xs text-muted tracking-wide">
             Enschede, NL

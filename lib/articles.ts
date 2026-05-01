@@ -17,16 +17,16 @@ interface Section {
 export const articles: Article[] = [
   {
     slug: 'the-r-k-brand',
-    title: 'Creation of the R—K brand',
+    title: 'Creation of the A—P brand',
     number: 'N°1',
     date: 'March 19, 2026',
     category: 'Insight',
     excerpt: 'The brand emerged as a response to what design had become — template-driven, interchangeable, and optimised for speed over intention.',
     body: [
-      { n: '01', heading: 'The problem with templates', text: 'Design had become a commodity. Pick a template, swap the logo, ship it. The result is a market full of brands that look like each other and stand for nothing. R—K was built as a direct rejection of that approach.' },
+      { n: '01', heading: 'The problem with templates', text: 'Design had become a commodity. Pick a template, swap the logo, ship it. The result is a market full of brands that look like each other and stand for nothing. A—P was built as a direct rejection of that approach.' },
       { n: '02', heading: 'Perception is foundational', text: 'Not decorative. Perception is the first thing a brand does — before a word is read, before a product is tried. The visual language either builds trust or erodes it. There is no neutral.' },
       { n: '03', heading: 'Integrated authorship', text: 'Concept, structure, and visual language cannot be fragmented across different hands without losing coherence. The work here is authored end to end — from strategic brief to deployed code.' },
-      { n: '04', heading: 'The logotype', text: 'R—K. Two letters and an em dash. The dash is not decoration — it is tension, pause, and relation. A mark that communicates without explaining itself.' },
+      { n: '04', heading: 'The logotype', text: 'A—P. Two letters and an em dash. The dash is not decoration — it is tension, pause, and relation. A mark that communicates without explaining itself.' },
       { n: '05', heading: 'Build for presence', text: 'Not volume. The practice is kept deliberately small. One client at a time gets the full weight of attention. That is the offer.' },
       { n: '06', heading: 'What this means in practice', text: 'Fewer projects, deeper engagement, and work that outlasts the trend cycle. Every decision traces back to a reason. That is the standard.' },
     ],
@@ -48,7 +48,7 @@ export const articles: Article[] = [
   },
   {
     slug: 'process-of-a-r-k-project',
-    title: 'Process of a R—K project',
+    title: 'Process of an A—P project',
     number: 'N°2',
     date: 'March 2026',
     category: 'Insight',

@@ -17,17 +17,17 @@ export const projects: Project[] = [
   {
     slug: 'r-k',
     id: 'PROJECT-0000',
-    title: 'R—K',
+    title: 'A—P',
     category: 'Identity',
     location: 'Enschede, NL',
     date: 'May 2026',
     year: '2026',
     services: ['Identity', 'Art Direction', 'Web Design + Development'],
     description:
-      'R—K builds presence and resonance through design, motion, and code that shapes true brand character. Doubt is expensive — R—K aims to remove doubt early by making the standard obvious.',
+      'A—P builds presence and resonance through design, motion, and code that shapes true brand character. Doubt is expensive — A—P aims to remove doubt early by making the standard obvious.',
     philosophy:
       'The brand emerged as a response to what design had become. Rejecting template-driven approaches in favour of intentional identity creation. Every decision — form, type, space — carries consequence.',
-    liveUrl: 'https://www.raviklaassens.com',
+    liveUrl: 'https://www.adityaprasanna.com',
     imageCount: 1,
   },
   {

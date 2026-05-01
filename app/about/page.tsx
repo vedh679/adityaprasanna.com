@@ -56,7 +56,7 @@ export default function AboutPage() {
             className="text-[clamp(1.4rem,3vw,2.8rem)] font-light leading-[1.3] tracking-tight text-foreground max-w-4xl"
             custom={1} initial="hidden" animate="visible" variants={fadeUp}
           >
-            R—K is an independent design and development practice focused on
+            A—P is an independent design and development practice focused on
             building strong digital presence for ambitious brands.
           </motion.p>
           <motion.p
@@ -105,7 +105,7 @@ export default function AboutPage() {
           viewport={{ once: true }} transition={{ duration: 1 }}
         >
           <span className="text-2xs tracking-widest uppercase text-[#333]">
-            Portrait — Ravi Klaassens
+            Portrait — Aditya Prasanna
           </span>
         </motion.div>
       </section>
@@ -125,7 +125,7 @@ export default function AboutPage() {
               'It started at 13 with Photoshop — no brief, no client, just the pull of making something from nothing. That instinct hasn\'t changed. Only the tools and the stakes have.',
               'In 2020, esports became the first real proving ground. Building visual identities for Outcast Region and Team Synergy meant learning fast — creating systems that had to work across every format, at pace, under scrutiny.',
               'The internship at UNCOMMON in 2024 brought the next layer: working inside a real creative agency, across brand strategy, digital design, and development. That\'s where Paramor began — and eventually gave way to this practice.',
-              'R—K exists to support agencies that need a sharp, reliable design and development partner, and brands that are ready to build something that holds weight. The practice is kept deliberately small to keep the quality high.',
+              'A—P exists to support agencies that need a sharp, reliable design and development partner, and brands that are ready to build something that holds weight. The practice is kept deliberately small to keep the quality high.',
             ].map((para, i) => (
               <motion.p
                 key={i}

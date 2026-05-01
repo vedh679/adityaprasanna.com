@@ -88,11 +88,11 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       <section className="px-6 md:px-10 py-16 border-b border-[#1a1a1a]">
         <div className="max-w-site mx-auto flex items-center gap-6">
           <div className="w-10 h-10 bg-[#1a1a1a] rounded-full flex items-center justify-center">
-            <span className="text-2xs text-muted">RK</span>
+            <span className="text-2xs text-muted">AP</span>
           </div>
           <div>
-            <p className="text-xs text-foreground tracking-wide">Ravi Klaassens</p>
-            <p className="text-xs text-muted tracking-wide">R—K · {article.date}</p>
+            <p className="text-xs text-foreground tracking-wide">Aditya Prasanna</p>
+            <p className="text-xs text-muted tracking-wide">A—P · {article.date}</p>
           </div>
         </div>
       </section>

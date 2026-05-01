@@ -7,7 +7,7 @@ import Link from 'next/link'
 const projects = [
   {
     id: 'r-k',
-    title: 'R—K',
+    title: 'A—P',
     category: 'Identity + Art Direction',
     year: '2026',
     slug: '/archives/r-k',
