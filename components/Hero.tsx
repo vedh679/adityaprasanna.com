@@ -88,13 +88,13 @@ export default function Hero() {
         <div className="flex items-center gap-8">
           <Link
             href="/for-agencies"
-            className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200 border-b border-transparent hover:border-foreground pb-px"
+            className="text-xs tracking-widest uppercase text-muted hover:text-crimson transition-colors duration-200 border-b border-transparent hover:border-crimson pb-px"
           >
             For Agencies →
           </Link>
           <Link
             href="/for-brands"
-            className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200 border-b border-transparent hover:border-foreground pb-px"
+            className="text-xs tracking-widest uppercase text-muted hover:text-crimson transition-colors duration-200 border-b border-transparent hover:border-crimson pb-px"
           >
             For Brands →
           </Link>
@@ -110,7 +110,7 @@ export default function Hero() {
         variants={fadeUp}
       >
         <motion.div
-          className="w-px h-12 bg-[#333]"
+          className="w-px h-12 bg-crimson"
           animate={{ scaleY: [0, 1, 0], originY: 0 }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
         />

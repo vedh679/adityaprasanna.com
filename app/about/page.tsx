@@ -202,7 +202,7 @@ export default function AboutPage() {
           >
             <Link
               href="/for-agencies"
-              className="text-xs tracking-widest uppercase text-foreground border border-[#333] hover:border-foreground px-6 py-3 transition-colors duration-200"
+              className="text-xs tracking-widest uppercase text-foreground border border-[#333] hover:border-crimson hover:text-crimson px-6 py-3 transition-colors duration-200"
             >
               For Agencies →
             </Link>

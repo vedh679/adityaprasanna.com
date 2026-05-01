@@ -108,7 +108,7 @@ function ProjectRow({ project, index }: { project: typeof projects[0]; index: nu
           <span className="text-xs tabular-nums text-muted">
             {project.year}
           </span>
-          <span className="text-xs text-muted opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <span className="text-xs text-crimson opacity-0 group-hover:opacity-100 transition-opacity duration-300">
             →
           </span>
         </div>

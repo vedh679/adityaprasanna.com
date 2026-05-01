@@ -94,7 +94,7 @@ export default function InsightsGrid() {
 
                 <div className="flex items-center justify-between">
                   <span className="text-xs text-muted">{article.date}</span>
-                  <span className="text-xs text-muted opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <span className="text-xs text-crimson opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                     Read →
                   </span>
                 </div>

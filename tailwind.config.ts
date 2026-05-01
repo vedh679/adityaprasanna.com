@@ -13,6 +13,7 @@ const config: Config = {
         muted: '#888888',
         border: '#1a1a1a',
         accent: '#ffffff',
+        crimson: '#891A20',
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'sans-serif'],
