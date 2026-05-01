@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { colorize } from '@/lib/brand'
 
 const projects = [
   {
@@ -96,7 +97,7 @@ function ProjectRow({ project, index }: { project: typeof projects[0]; index: nu
             {String(index + 1).padStart(2, '0')}
           </span>
           <span className="text-lg md:text-2xl font-light tracking-tight text-foreground group-hover:text-white transition-colors duration-300">
-            {project.title}
+            {colorize(project.title)}
           </span>
         </div>
 

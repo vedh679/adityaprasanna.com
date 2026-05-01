@@ -29,7 +29,7 @@ export default function MarqueeStrip() {
           <span
             key={i}
             className={`mx-6 text-xs tracking-widest uppercase ${
-              item === '·' ? 'text-[#333]' : 'text-muted'
+              item === '·' ? 'text-[#333]' : item === 'A—P' ? 'text-crimson' : 'text-muted'
             }`}
           >
             {item}

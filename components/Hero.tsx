@@ -42,7 +42,7 @@ export default function Hero() {
           animate="visible"
           variants={fadeUp}
         >
-          Aditya Prasanna.
+          <span className="text-crimson">Aditya Prasanna</span>.
         </motion.h1>
         <motion.h1
           className="text-[clamp(2.8rem,8vw,8rem)] font-light leading-[1.05] tracking-tight text-foreground"

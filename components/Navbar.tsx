@@ -38,7 +38,7 @@ export default function Navbar() {
           href="/"
           className="text-sm font-medium tracking-widest text-foreground hover:text-muted transition-colors duration-200"
         >
-          A—P
+          <span className="text-crimson">A—P</span>
         </Link>
 
         {/* Desktop nav links */}

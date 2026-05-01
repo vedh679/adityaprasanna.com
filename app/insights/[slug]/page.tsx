@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { getArticle, getAdjacentArticles, articles } from '@/lib/articles'
+import { colorize } from '@/lib/brand'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -91,8 +92,8 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
             <span className="text-2xs text-muted">AP</span>
           </div>
           <div>
-            <p className="text-xs text-foreground tracking-wide">Aditya Prasanna</p>
-            <p className="text-xs text-muted tracking-wide">A—P · {article.date}</p>
+            <p className="text-xs text-foreground tracking-wide"><span className="text-crimson">Aditya Prasanna</span></p>
+            <p className="text-xs text-muted tracking-wide"><span className="text-crimson">A—P</span> · {article.date}</p>
           </div>
         </div>
       </section>
@@ -129,7 +130,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                       <span className="text-2xs tracking-widest uppercase text-muted">{a.category}</span>
                     </div>
                     <h3 className="text-lg md:text-xl font-light leading-snug text-foreground group-hover:text-white transition-colors duration-200">
-                      {a.title}
+                      {colorize(a.title)}
                     </h3>
                     <div className="flex items-center justify-between">
                       <span className="text-xs text-muted">{a.date}</span>
@@ -151,7 +152,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           >
             <span className="text-2xs tracking-widest uppercase text-muted">← Previous</span>
             <span className="text-base md:text-xl font-light text-foreground group-hover:text-white transition-colors duration-200">
-              {prev.title}
+              {colorize(prev.title)}
             </span>
           </Link>
           <Link
@@ -160,7 +161,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           >
             <span className="text-2xs tracking-widest uppercase text-muted">Next →</span>
             <span className="text-base md:text-xl font-light text-foreground group-hover:text-white transition-colors duration-200">
-              {next.title}
+              {colorize(next.title)}
             </span>
           </Link>
         </div>

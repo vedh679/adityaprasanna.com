@@ -12,7 +12,7 @@ export default function Footer() {
               href="/"
               className="text-sm font-medium tracking-widest text-foreground hover:text-muted transition-colors duration-200"
             >
-              A—P
+              <span className="text-crimson">A—P</span>
             </Link>
             <p className="text-xs text-muted tracking-wide max-w-xs">
               Design & Code for those who refuse to settle.
@@ -75,7 +75,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-[#1a1a1a] flex flex-col md:flex-row justify-between gap-2">
           <span className="text-xs text-muted tracking-wide">
-            ©2026 A—P. All rights reserved.
+            ©2026 <span className="text-crimson">A—P</span>. All rights reserved.
           </span>
           <span className="text-xs text-muted tracking-wide">
             Enschede, NL

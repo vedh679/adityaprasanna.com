@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { colorize } from '@/lib/brand'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -255,7 +256,7 @@ export default function ServicePage({ variant }: Props) {
                 >
                   <div className="flex items-baseline gap-6">
                     <span className="text-2xs tabular-nums text-muted w-6">{String(i + 1).padStart(2, '0')}</span>
-                    <span className="text-xl font-light text-foreground">{proj.title}</span>
+                    <span className="text-xl font-light text-foreground">{colorize(proj.title)}</span>
                   </div>
                   <div className="flex items-center gap-8">
                     <span className="hidden md:block text-xs tracking-widest uppercase text-muted">{proj.category}</span>

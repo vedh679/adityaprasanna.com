@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { colorize } from '@/lib/brand'
 
 const articles = [
   {
@@ -89,7 +90,7 @@ export default function InsightsGrid() {
                 </div>
 
                 <h3 className="text-lg md:text-xl font-light leading-snug tracking-tight text-foreground group-hover:text-white transition-colors duration-200">
-                  {article.title}
+                  {colorize(article.title)}
                 </h3>
 
                 <div className="flex items-center justify-between">

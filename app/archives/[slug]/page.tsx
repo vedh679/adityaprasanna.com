@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { getProject, getAdjacentProjects, projects } from '@/lib/projects'
+import { colorize } from '@/lib/brand'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -39,7 +40,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             className="text-[clamp(2.5rem,6vw,7rem)] font-light leading-[1.05] tracking-tight text-foreground mb-6"
             custom={1} initial="hidden" animate="visible" variants={fadeUp}
           >
-            {project.title}
+            {colorize(project.title)}
           </motion.h1>
 
           <motion.div
@@ -99,7 +100,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
             viewport={{ once: true }} transition={{ duration: 0.8 }}
           >
             <p className="text-[clamp(1.1rem,2vw,1.6rem)] font-light leading-[1.5] text-foreground">
-              {project.description}
+              {colorize(project.description)}
             </p>
           </motion.div>
           <motion.div
@@ -164,7 +165,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
                     <span className="text-2xs text-[#222] tracking-widest uppercase">{p.id.split('-')[0]}</span>
                   </div>
                   <p className="text-xs font-light text-foreground group-hover:text-white transition-colors duration-200 leading-snug">
-                    {p.title}
+                    {colorize(p.title)}
                   </p>
                   <p className="text-2xs tracking-widest uppercase text-muted">{p.services[0]}</p>
                 </Link>
@@ -183,7 +184,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
           >
             <span className="text-2xs tracking-widest uppercase text-muted">← Previous</span>
             <span className="text-base md:text-xl font-light text-foreground group-hover:text-white transition-colors duration-200">
-              {prev.title}
+              {colorize(prev.title)}
             </span>
           </Link>
           <Link
@@ -192,7 +193,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
           >
             <span className="text-2xs tracking-widest uppercase text-muted">Next →</span>
             <span className="text-base md:text-xl font-light text-foreground group-hover:text-white transition-colors duration-200">
-              {next.title}
+              {colorize(next.title)}
             </span>
           </Link>
         </div>

@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { colorize } from '@/lib/brand'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -56,7 +57,7 @@ export default function AboutPage() {
             className="text-[clamp(1.4rem,3vw,2.8rem)] font-light leading-[1.3] tracking-tight text-foreground max-w-4xl"
             custom={1} initial="hidden" animate="visible" variants={fadeUp}
           >
-            A—P is an independent design and development practice focused on
+            <span className="text-crimson">A—P</span> is an independent design and development practice focused on
             building strong digital presence for ambitious brands.
           </motion.p>
           <motion.p
@@ -105,7 +106,7 @@ export default function AboutPage() {
           viewport={{ once: true }} transition={{ duration: 1 }}
         >
           <span className="text-2xs tracking-widest uppercase text-[#333]">
-            Portrait — Aditya Prasanna
+            Portrait — <span className="text-crimson">Aditya Prasanna</span>
           </span>
         </motion.div>
       </section>
@@ -136,7 +137,7 @@ export default function AboutPage() {
                 variants={fadeUp}
                 className="text-base text-muted leading-relaxed"
               >
-                {para}
+                {colorize(para)}
               </motion.p>
             ))}
           </div>
