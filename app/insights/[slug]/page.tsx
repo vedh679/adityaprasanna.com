@@ -25,7 +25,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
   return (
     <>
       {/* Article header */}
-      <section className="px-6 md:px-10 pt-32 pb-16 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 pt-32 pb-16 border-b border-border">
         <div className="max-w-site mx-auto">
           <motion.div
             className="flex items-center justify-between mb-12"
@@ -55,9 +55,9 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* Article body */}
-      <section className="px-6 md:px-10 py-24 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-24 border-b border-border">
         <div className="max-w-site mx-auto">
-          <div className="flex flex-col divide-y divide-[#1a1a1a]">
+          <div className="flex flex-col divide-y divide-border">
             {article.body.map((section, i) => (
               <motion.div
                 key={section.n}
@@ -86,7 +86,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* Author block */}
-      <section className="px-6 md:px-10 py-16 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-16 border-b border-border">
         <div className="max-w-site mx-auto flex items-center gap-6">
           <div className="w-10 h-10 bg-[#1a1a1a] rounded-full flex items-center justify-center">
             <span className="text-2xs text-muted">AP</span>
@@ -99,7 +99,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* Related articles */}
-      <section className="px-6 md:px-10 py-20 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-20 border-b border-border">
         <div className="max-w-site mx-auto">
           <motion.p
             className="text-2xs tracking-widest uppercase text-muted mb-10"
@@ -123,7 +123,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                 >
                   <Link
                     href={`/insights/${a.slug}`}
-                    className="group flex flex-col justify-between gap-8 bg-[#0a0a0a] p-8 md:p-10 h-full hover:bg-[#111] transition-colors duration-300"
+                    className="group flex flex-col justify-between gap-8 bg-background p-8 md:p-10 h-full hover:bg-[#111] transition-colors duration-300"
                   >
                     <div className="flex items-start justify-between">
                       <span className="text-2xs tabular-nums text-muted">{a.number}</span>
@@ -144,8 +144,8 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       </section>
 
       {/* Prev / Next navigation */}
-      <section className="border-t border-[#1a1a1a]">
-        <div className="grid grid-cols-2 divide-x divide-[#1a1a1a]">
+      <section className="border-t border-border">
+        <div className="grid grid-cols-2 divide-x divide-border">
           <Link
             href={`/insights/${prev.slug}`}
             className="group flex flex-col gap-2 px-6 md:px-10 py-10 hover:bg-[#111] transition-colors duration-200"

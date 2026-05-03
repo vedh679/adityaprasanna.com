@@ -71,7 +71,7 @@ export default function ServicePage({ variant }: Props) {
   return (
     <>
       {/* Hero */}
-      <section className="px-6 md:px-10 pt-32 pb-24 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 pt-32 pb-24 border-b border-border">
         <div className="max-w-site mx-auto">
           <motion.span
             className="text-2xs tracking-widest uppercase text-muted block mb-10"
@@ -106,7 +106,7 @@ export default function ServicePage({ variant }: Props) {
       </section>
 
       {/* Capabilities */}
-      <section className="px-6 md:px-10 py-20 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-20 border-b border-border">
         <div className="max-w-site mx-auto">
           <motion.p
             className="text-2xs tracking-widest uppercase text-muted mb-10"
@@ -124,7 +124,7 @@ export default function ServicePage({ variant }: Props) {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeUp}
-                className="text-xs tracking-widest uppercase text-muted border border-[#1a1a1a] px-4 py-2 hover:border-[#333] hover:text-foreground transition-colors duration-200"
+                className="text-xs tracking-widest uppercase text-muted border border-border px-4 py-2 hover:border-[#333] hover:text-foreground transition-colors duration-200"
               >
                 {cap}
               </motion.span>
@@ -134,7 +134,7 @@ export default function ServicePage({ variant }: Props) {
       </section>
 
       {/* Body copy */}
-      <section className="px-6 md:px-10 py-20 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-20 border-b border-border">
         <div className="max-w-site mx-auto max-w-3xl">
           <motion.p
             className="text-[clamp(1.1rem,2vw,1.5rem)] font-light leading-[1.6] text-foreground"
@@ -147,7 +147,7 @@ export default function ServicePage({ variant }: Props) {
       </section>
 
       {/* Process */}
-      <section className="px-6 md:px-10 py-20 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-20 border-b border-border">
         <div className="max-w-site mx-auto">
           <motion.p
             className="text-2xs tracking-widest uppercase text-muted mb-12"
@@ -156,7 +156,7 @@ export default function ServicePage({ variant }: Props) {
           >
             Process
           </motion.p>
-          <div className="flex flex-col divide-y divide-[#1a1a1a]">
+          <div className="flex flex-col divide-y divide-border">
             {process.map((p, i) => (
               <motion.div
                 key={p.step}
@@ -181,7 +181,7 @@ export default function ServicePage({ variant }: Props) {
       </section>
 
       {/* Testimonial */}
-      <section className="px-6 md:px-10 py-20 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-20 border-b border-border">
         <div className="max-w-site mx-auto">
           <motion.blockquote
             className="max-w-2xl"
@@ -203,7 +203,7 @@ export default function ServicePage({ variant }: Props) {
       </section>
 
       {/* Awards */}
-      <section className="px-6 md:px-10 py-16 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-16 border-b border-border">
         <div className="max-w-site mx-auto flex flex-col md:flex-row md:items-center gap-6 md:gap-16">
           <motion.div
             className="flex items-baseline gap-3"
@@ -231,7 +231,7 @@ export default function ServicePage({ variant }: Props) {
       </section>
 
       {/* Featured projects */}
-      <section className="px-6 md:px-10 py-20 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-20 border-b border-border">
         <div className="max-w-site mx-auto">
           <motion.p
             className="text-2xs tracking-widest uppercase text-muted mb-12"
@@ -240,7 +240,7 @@ export default function ServicePage({ variant }: Props) {
           >
             Featured Work
           </motion.p>
-          <div className="border-t border-[#1a1a1a]">
+          <div className="border-t border-border">
             {featuredProjects.map((proj, i) => (
               <motion.div
                 key={proj.slug}
@@ -252,7 +252,7 @@ export default function ServicePage({ variant }: Props) {
               >
                 <Link
                   href={proj.slug}
-                  className="group flex items-center justify-between py-5 border-b border-[#1a1a1a] hover:bg-[#111] px-2 -mx-2 transition-colors duration-300"
+                  className="group flex items-center justify-between py-5 border-b border-border hover:bg-[#111] px-2 -mx-2 transition-colors duration-300"
                 >
                   <div className="flex items-baseline gap-6">
                     <span className="text-2xs tabular-nums text-muted w-6">{String(i + 1).padStart(2, '0')}</span>

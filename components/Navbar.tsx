@@ -30,7 +30,7 @@ export default function Navbar() {
   }, [])
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/90 backdrop-blur-sm">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-sm">
       <nav className="mx-auto flex max-w-site items-center justify-between px-6 py-4 md:px-10">
 
         {/* Logo */}
@@ -92,7 +92,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden border-t border-[#1a1a1a] bg-[#0a0a0a]">
+        <div className="md:hidden border-t border-border bg-background">
           <ul className="flex flex-col px-6 py-6 gap-6">
             {navLinks.map((link) => (
               <li key={link.href}>
@@ -105,7 +105,7 @@ export default function Navbar() {
                 </Link>
               </li>
             ))}
-            <li className="pt-2 border-t border-[#1a1a1a] flex gap-6">
+            <li className="pt-2 border-t border-border flex gap-6">
               <a
                 href="https://www.instagram.com/adityaprasanna"
                 target="_blank"

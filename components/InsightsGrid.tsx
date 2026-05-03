@@ -46,7 +46,7 @@ const fadeUp = {
 
 export default function InsightsGrid() {
   return (
-    <section id="section_insights" className="border-t border-[#1a1a1a] px-6 md:px-10 py-24">
+    <section id="section_insights" className="border-t border-border px-6 md:px-10 py-24">
       <div className="max-w-site mx-auto">
 
         <div className="flex items-end justify-between mb-12">
@@ -82,7 +82,7 @@ export default function InsightsGrid() {
             >
               <Link
                 href={article.slug}
-                className="group flex flex-col justify-between gap-8 bg-[#0a0a0a] p-8 md:p-10 h-full hover:bg-[#111] transition-colors duration-300"
+                className="group flex flex-col justify-between gap-8 bg-background p-8 md:p-10 h-full hover:bg-[#111] transition-colors duration-300"
               >
                 <div className="flex items-start justify-between gap-4">
                   <span className="text-2xs tabular-nums text-muted">{article.number}</span>

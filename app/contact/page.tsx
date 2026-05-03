@@ -15,7 +15,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="px-6 md:px-10 pt-32 pb-24 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 pt-32 pb-24 border-b border-border">
         <div className="max-w-site mx-auto">
           <motion.div
             className="flex items-center gap-3 mb-10"
@@ -49,12 +49,12 @@ export default function ContactPage() {
       </section>
 
       {/* Contact methods */}
-      <section className="px-6 md:px-10 py-20 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-20 border-b border-border">
         <div className="max-w-site mx-auto grid grid-cols-1 md:grid-cols-2 gap-px bg-[#1a1a1a]">
 
           <motion.a
             href="mailto:work@adityaprasanna.com"
-            className="group bg-[#0a0a0a] p-10 md:p-14 flex flex-col justify-between gap-16 hover:bg-[#111] transition-colors duration-300"
+            className="group bg-background p-10 md:p-14 flex flex-col justify-between gap-16 hover:bg-[#111] transition-colors duration-300"
             custom={0} initial="hidden" animate="visible" variants={fadeUp}
           >
             <span className="text-2xs tracking-widest uppercase text-muted">Email</span>
@@ -70,7 +70,7 @@ export default function ContactPage() {
 
           <motion.a
             href="tel:+31630951453"
-            className="group bg-[#0a0a0a] p-10 md:p-14 flex flex-col justify-between gap-16 hover:bg-[#111] transition-colors duration-300"
+            className="group bg-background p-10 md:p-14 flex flex-col justify-between gap-16 hover:bg-[#111] transition-colors duration-300"
             custom={1} initial="hidden" animate="visible" variants={fadeUp}
           >
             <span className="text-2xs tracking-widest uppercase text-muted">Phone</span>
@@ -88,7 +88,7 @@ export default function ContactPage() {
       </section>
 
       {/* Positioning / ideal client filter */}
-      <section className="px-6 md:px-10 py-20 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-20 border-b border-border">
         <div className="max-w-site mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
           <motion.p
             className="text-2xs tracking-widest uppercase text-muted md:col-span-2 pt-1"
@@ -115,7 +115,7 @@ export default function ContactPage() {
                 whileInView="visible"
                 viewport={{ once: true, margin: '-40px' }}
                 variants={fadeUp}
-                className="py-6 border-t border-[#1a1a1a] grid grid-cols-1 md:grid-cols-5 gap-4"
+                className="py-6 border-t border-border grid grid-cols-1 md:grid-cols-5 gap-4"
               >
                 <p className="text-xs tracking-widest uppercase text-muted md:col-span-2">{item.label}</p>
                 <p className="text-sm text-muted leading-relaxed md:col-span-3">{item.text}</p>

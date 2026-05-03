@@ -78,7 +78,7 @@ function ProjectRow({ project, index }: { project: typeof projects[0]; index: nu
     >
       <Link
         href={project.slug}
-        className="group flex items-center justify-between py-5 border-b border-[#1a1a1a] relative overflow-hidden"
+        className="group flex items-center justify-between py-5 border-b border-border relative overflow-hidden"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
@@ -135,7 +135,7 @@ function ProjectRow({ project, index }: { project: typeof projects[0]; index: nu
 
 export default function WorksGrid() {
   return (
-    <section id="section_cases" className="border-t border-[#1a1a1a] px-6 md:px-10 py-24">
+    <section id="section_cases" className="border-t border-border px-6 md:px-10 py-24">
       <div className="max-w-site mx-auto">
 
         {/* Header */}
@@ -161,7 +161,7 @@ export default function WorksGrid() {
         </div>
 
         {/* Top border */}
-        <div className="border-t border-[#1a1a1a]">
+        <div className="border-t border-border">
           {projects.map((project, i) => (
             <ProjectRow key={project.id} project={project} index={i} />
           ))}

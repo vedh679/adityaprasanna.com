@@ -45,7 +45,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero intro */}
-      <section className="px-6 md:px-10 pt-32 pb-24 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 pt-32 pb-24 border-b border-border">
         <div className="max-w-site mx-auto">
           <motion.span
             className="text-2xs tracking-widest uppercase text-muted block mb-10"
@@ -71,7 +71,7 @@ export default function AboutPage() {
       </section>
 
       {/* Capabilities */}
-      <section className="px-6 md:px-10 py-16 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-16 border-b border-border">
         <div className="max-w-site mx-auto">
           <motion.p
             className="text-2xs tracking-widest uppercase text-muted mb-8"
@@ -89,7 +89,7 @@ export default function AboutPage() {
                 whileInView="visible"
                 viewport={{ once: true }}
                 variants={fadeUp}
-                className="text-xs tracking-widest uppercase text-muted border border-[#1a1a1a] px-4 py-2"
+                className="text-xs tracking-widest uppercase text-muted border border-border px-4 py-2"
               >
                 {cap}
               </motion.span>
@@ -99,7 +99,7 @@ export default function AboutPage() {
       </section>
 
       {/* Portrait placeholder */}
-      <section className="border-b border-[#1a1a1a]">
+      <section className="border-b border-border">
         <motion.div
           className="w-full aspect-[16/7] bg-[#111] flex items-center justify-center"
           initial={{ opacity: 0 }} whileInView={{ opacity: 1 }}
@@ -112,7 +112,7 @@ export default function AboutPage() {
       </section>
 
       {/* Founder narrative */}
-      <section className="px-6 md:px-10 py-24 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-24 border-b border-border">
         <div className="max-w-site mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
           <motion.p
             className="text-2xs tracking-widest uppercase text-muted md:col-span-2 pt-1"
@@ -145,7 +145,7 @@ export default function AboutPage() {
       </section>
 
       {/* Experience timeline */}
-      <section className="px-6 md:px-10 py-20 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-20 border-b border-border">
         <div className="max-w-site mx-auto">
           <motion.p
             className="text-2xs tracking-widest uppercase text-muted mb-12"
@@ -154,7 +154,7 @@ export default function AboutPage() {
           >
             Experience
           </motion.p>
-          <div className="flex flex-col divide-y divide-[#1a1a1a]">
+          <div className="flex flex-col divide-y divide-border">
             {experience.map((exp, i) => (
               <motion.div
                 key={exp.company}
@@ -209,7 +209,7 @@ export default function AboutPage() {
             </Link>
             <Link
               href="/for-brands"
-              className="text-xs tracking-widest uppercase text-muted border border-[#1a1a1a] hover:border-[#333] hover:text-foreground px-6 py-3 transition-colors duration-200"
+              className="text-xs tracking-widest uppercase text-muted border border-border hover:border-[#333] hover:text-foreground px-6 py-3 transition-colors duration-200"
             >
               For Brands →
             </Link>

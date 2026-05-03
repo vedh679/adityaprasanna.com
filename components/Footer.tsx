@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[#1a1a1a] mt-auto">
+    <footer className="border-t border-border mt-auto">
       <div className="mx-auto max-w-site px-6 md:px-10 py-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-10">
 
@@ -73,7 +73,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-[#1a1a1a] flex flex-col md:flex-row justify-between gap-2">
+        <div className="mt-12 pt-6 border-t border-border flex flex-col md:flex-row justify-between gap-2">
           <span className="text-xs text-muted tracking-wide">
             ©2026 <span className="text-crimson">A—P</span>. All rights reserved.
           </span>

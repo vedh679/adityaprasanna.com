@@ -31,7 +31,7 @@ const fadeUp = {
 
 export default function ServicesBlock() {
   return (
-    <section className="border-t border-[#1a1a1a] px-6 md:px-10 py-24">
+    <section className="border-t border-border px-6 md:px-10 py-24">
       <div className="max-w-site mx-auto">
 
         <motion.p
@@ -53,7 +53,7 @@ export default function ServicesBlock() {
               whileInView="visible"
               viewport={{ once: true, margin: '-60px' }}
               variants={fadeUp}
-              className="bg-[#0a0a0a] p-10 md:p-16 flex flex-col justify-between gap-12 group"
+              className="bg-background p-10 md:p-16 flex flex-col justify-between gap-12 group"
             >
               <div className="flex flex-col gap-6">
                 <span className="text-2xs tracking-widest uppercase text-muted">

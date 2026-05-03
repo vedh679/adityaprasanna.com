@@ -23,7 +23,7 @@ const items = [
 
 export default function MarqueeStrip() {
   return (
-    <div className="border-t border-b border-[#1a1a1a] py-4 overflow-hidden">
+    <div className="border-t border-b border-border py-4 overflow-hidden">
       <Marquee speed={40} gradient={false} pauseOnHover>
         {items.map((item, i) => (
           <span

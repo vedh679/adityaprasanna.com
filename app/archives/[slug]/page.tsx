@@ -25,7 +25,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
   return (
     <>
       {/* Header */}
-      <section className="px-6 md:px-10 pt-32 pb-16 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 pt-32 pb-16 border-b border-border">
         <div className="max-w-site mx-auto">
 
           <motion.div
@@ -79,7 +79,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
       </section>
 
       {/* Hero image placeholder */}
-      <section className="border-b border-[#1a1a1a]">
+      <section className="border-b border-border">
         <motion.div
           className="w-full aspect-[16/9] bg-[#111] flex items-center justify-center"
           initial={{ opacity: 0 }} animate={{ opacity: 1 }}
@@ -92,7 +92,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
       </section>
 
       {/* Description */}
-      <section className="px-6 md:px-10 py-24 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-24 border-b border-border">
         <div className="max-w-site mx-auto grid grid-cols-1 md:grid-cols-12 gap-12">
           <motion.div
             className="md:col-span-5"
@@ -117,7 +117,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
 
       {/* Image grid placeholders */}
       {project.imageCount > 1 && (
-        <section className="border-b border-[#1a1a1a]">
+        <section className="border-b border-border">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#1a1a1a]">
             {Array.from({ length: project.imageCount - 1 }).map((_, i) => (
               <motion.div
@@ -136,7 +136,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
       )}
 
       {/* Next Case carousel */}
-      <section className="px-6 md:px-10 py-20 border-b border-[#1a1a1a]">
+      <section className="px-6 md:px-10 py-20 border-b border-border">
         <div className="max-w-site mx-auto">
           <motion.p
             className="text-2xs tracking-widest uppercase text-muted mb-10"
@@ -157,7 +157,7 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
               >
                 <Link
                   href={`/archives/${p.slug}`}
-                  className={`group flex flex-col gap-3 p-4 bg-[#0a0a0a] hover:bg-[#111] transition-colors duration-200 h-full ${
+                  className={`group flex flex-col gap-3 p-4 bg-background hover:bg-[#111] transition-colors duration-200 h-full ${
                     p.slug === slug ? 'border border-[#333]' : ''
                   }`}
                 >
@@ -176,8 +176,8 @@ export default function CaseStudyPage({ params }: { params: { slug: string } }) 
       </section>
 
       {/* Prev / Next navigation */}
-      <section className="border-t border-[#1a1a1a]">
-        <div className="grid grid-cols-2 divide-x divide-[#1a1a1a]">
+      <section className="border-t border-border">
+        <div className="grid grid-cols-2 divide-x divide-border">
           <Link
             href={`/archives/${prev.slug}`}
             className="group flex flex-col gap-2 px-6 md:px-10 py-10 hover:bg-[#111] transition-colors duration-200"
