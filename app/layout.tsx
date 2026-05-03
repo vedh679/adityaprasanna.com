@@ -24,13 +24,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="bg-background text-foreground antialiased">
+      {/* pb-[52px] keeps page content above the fixed bottom timeline */}
+      <body className="bg-background text-foreground antialiased pb-[52px]">
         <TimeThemeProvider />
         <Navbar />
-        <DayTimeline />
-        {/* pt-[65px] navbar + pt-[40px] timeline = 105px */}
-        <main className="pt-[105px]">{children}</main>
+        <main className="pt-[65px]">{children}</main>
         <Footer />
+        <DayTimeline />
       </body>
     </html>
   )
