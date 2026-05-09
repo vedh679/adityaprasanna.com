@@ -35,10 +35,9 @@ export default function Philosophy() {
           viewport={{ once: true, margin: '-80px' }}
           variants={fadeUp}
         >
-          Design shapes the world not as decoration,{' '}
+          Build everything you need, then give it to the world.{' '}
           <span className="text-muted">
-            but as a force. Every decision — form, type, space — carries
-            consequence. Settling is easy. The work here isn't built for that.
+            Be obsessed with creating; as discipline is for the ones who are not obsessed.
           </span>
         </motion.p>
 
