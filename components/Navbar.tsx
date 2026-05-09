@@ -3,18 +3,8 @@
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
-const navLinks = [
-  { label: 'For Agencies', href: '/for-agencies' },
-  { label: 'For Brands', href: '/for-brands' },
-  { label: 'Works', href: '/#section_cases' },
-  { label: 'Insights', href: '/#section_insights' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
-]
-
 export default function Navbar() {
   const [time, setTime] = useState('')
-  const [menuOpen, setMenuOpen] = useState(false)
 
   useEffect(() => {
     const tick = () => {
@@ -22,7 +12,7 @@ export default function Navbar() {
       const hh = String(now.getHours()).padStart(2, '0')
       const mm = String(now.getMinutes()).padStart(2, '0')
       const ss = String(now.getSeconds()).padStart(2, '0')
-      setTime(`${hh}:${mm}:${ss} CET`)
+      setTime(`${hh}:${mm}:${ss}`)
     }
     tick()
     const id = setInterval(tick, 1000)
@@ -41,91 +31,29 @@ export default function Navbar() {
           <span className="text-crimson">A—P</span>
         </Link>
 
-        {/* Desktop nav links */}
-        <ul className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200"
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-
-        {/* Right side: clock + socials */}
-        <div className="hidden md:flex items-center gap-6">
-          <span className="text-xs tracking-wider text-muted tabular-nums">
+        {/* Right: clock + socials */}
+        <div className="flex items-center gap-6">
+          <span className="text-xs tracking-wider text-muted tabular-nums hidden md:block">
             {time}
           </span>
-          <div className="flex items-center gap-4">
-            <a
-              href="https://www.instagram.com/adityaprasanna"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200"
-            >
-              IG
-            </a>
-            <a
-              href="https://www.linkedin.com/in/adityaprasanna"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200"
-            >
-              LI
-            </a>
-          </div>
+          <a
+            href="https://www.instagram.com/adityaprasanna"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200"
+          >
+            IG
+          </a>
+          <a
+            href="https://www.linkedin.com/in/adityaprasanna"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200"
+          >
+            LI
+          </a>
         </div>
-
-        {/* Mobile menu toggle */}
-        <button
-          className="md:hidden text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? 'Close' : 'Menu'}
-        </button>
       </nav>
-
-      {/* Mobile menu */}
-      {menuOpen && (
-        <div className="md:hidden border-t border-border bg-background">
-          <ul className="flex flex-col px-6 py-6 gap-6">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  onClick={() => setMenuOpen(false)}
-                  className="text-sm tracking-widest uppercase text-muted hover:text-foreground transition-colors duration-200"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-            <li className="pt-2 border-t border-border flex gap-6">
-              <a
-                href="https://www.instagram.com/adityaprasanna"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors"
-              >
-                Instagram
-              </a>
-              <a
-                href="https://www.linkedin.com/in/adityaprasanna"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs tracking-widest uppercase text-muted hover:text-foreground transition-colors"
-              >
-                LinkedIn
-              </a>
-            </li>
-          </ul>
-        </div>
-      )}
     </header>
   )
 }

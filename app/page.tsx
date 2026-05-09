@@ -1,3 +1,4 @@
+import HorizontalScroller, { Panel } from '@/components/HorizontalScroller'
 import Hero from '@/components/Hero'
 import Philosophy from '@/components/Philosophy'
 import WorksGrid from '@/components/WorksGrid'
@@ -7,13 +8,13 @@ import InsightsGrid from '@/components/InsightsGrid'
 
 export default function Home() {
   return (
-    <>
-      <Hero />
-      <MarqueeStrip />
-      <Philosophy />
-      <WorksGrid />
-      <ServicesBlock />
-      <InsightsGrid />
-    </>
+    <HorizontalScroller>
+      <Panel><Hero /></Panel>
+      <Panel><Philosophy /></Panel>
+      <Panel><WorksGrid /></Panel>
+      <Panel><MarqueeStrip /></Panel>
+      <Panel><ServicesBlock /></Panel>
+      <Panel><InsightsGrid /></Panel>
+    </HorizontalScroller>
   )
 }

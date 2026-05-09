@@ -15,7 +15,7 @@ const fadeUp = {
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col justify-between px-6 md:px-10 pt-32 pb-12 overflow-hidden">
+    <section className="relative h-full flex flex-col justify-between px-6 md:px-10 pt-12 pb-6 overflow-hidden">
 
       {/* Top label row */}
       <motion.div
@@ -34,7 +34,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Main headline */}
-      <div className="flex flex-col gap-0 mt-auto mb-auto py-16 max-w-site mx-auto w-full">
+      <div className="flex flex-col gap-0 mt-auto mb-auto py-6 max-w-site mx-auto w-full">
         <motion.h1
           className="text-[clamp(2.8rem,8vw,8rem)] font-light leading-[1.05] tracking-tight text-foreground"
           custom={0.2}
@@ -85,33 +85,22 @@ export default function Hero() {
           Independent design and development practice.<br />
           Building digital presence for ambitious brands.
         </p>
-        <div className="flex items-center gap-8">
-          <Link
-            href="/for-agencies"
-            className="text-xs tracking-widest uppercase text-muted hover:text-crimson transition-colors duration-200 border-b border-transparent hover:border-crimson pb-px"
-          >
-            For Agencies →
-          </Link>
-          <Link
-            href="/for-brands"
-            className="text-xs tracking-widest uppercase text-muted hover:text-crimson transition-colors duration-200 border-b border-transparent hover:border-crimson pb-px"
-          >
-            For Brands →
-          </Link>
-        </div>
+        <span className="text-xs tracking-widest uppercase text-muted">
+          Scroll to explore →
+        </span>
       </motion.div>
 
-      {/* Scroll indicator */}
+      {/* Scroll indicator — horizontal */}
       <motion.div
-        className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="absolute right-10 top-1/2 -translate-y-1/2 flex items-center gap-2"
         custom={1.0}
         initial="hidden"
         animate="visible"
         variants={fadeUp}
       >
         <motion.div
-          className="w-px h-12 bg-crimson"
-          animate={{ scaleY: [0, 1, 0], originY: 0 }}
+          className="h-px w-12 bg-crimson"
+          animate={{ scaleX: [0, 1, 0], originX: 0 }}
           transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
         />
       </motion.div>

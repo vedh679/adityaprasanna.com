@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
 import DayTimeline from '@/components/DayTimeline'
 import TimeThemeProvider from '@/components/TimeThemeProvider'
 import './globals.css'
@@ -24,13 +23,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      {/* pb-[52px] keeps page content above the fixed bottom timeline */}
-      <body className="bg-background text-foreground antialiased pb-[52px]">
+      <body className="bg-background text-foreground antialiased h-screen overflow-hidden">
         <TimeThemeProvider />
         <Navbar />
-        <main className="pt-[65px]">{children}</main>
-        <Footer />
+        {/* Fills exactly the space between the fixed navbar (65px) and timeline (52px) */}
+        <main className="absolute inset-x-0 top-[65px] bottom-[52px] overflow-hidden">
+          {children}
+        </main>
         <DayTimeline />
+
       </body>
     </html>
   )

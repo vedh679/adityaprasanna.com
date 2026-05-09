@@ -13,7 +13,7 @@ const fadeUp = {
 
 export default function Philosophy() {
   return (
-    <section className="border-t border-border px-6 md:px-10 py-24 md:py-36">
+    <section className="border-t border-border px-6 md:px-10 h-full flex flex-col justify-center">
       <div className="max-w-site mx-auto">
 
         {/* Label */}

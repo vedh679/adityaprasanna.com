@@ -31,7 +31,7 @@ const fadeUp = {
 
 export default function ServicesBlock() {
   return (
-    <section className="border-t border-border px-6 md:px-10 py-24">
+    <section className="border-t border-border px-6 md:px-10 h-full flex flex-col justify-center">
       <div className="max-w-site mx-auto">
 
         <motion.p

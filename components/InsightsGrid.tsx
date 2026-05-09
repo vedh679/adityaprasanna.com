@@ -46,7 +46,7 @@ const fadeUp = {
 
 export default function InsightsGrid() {
   return (
-    <section id="section_insights" className="border-t border-border px-6 md:px-10 py-24">
+    <section id="section_insights" className="border-t border-border px-6 md:px-10 py-10 h-full overflow-y-auto">
       <div className="max-w-site mx-auto">
 
         <div className="flex items-end justify-between mb-12">
