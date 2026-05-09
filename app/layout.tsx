@@ -26,12 +26,10 @@ export default function RootLayout({
       <body className="bg-background text-foreground antialiased h-screen overflow-hidden">
         <TimeThemeProvider />
         <Navbar />
-        {/* Fills exactly the space between the fixed navbar (65px) and timeline (52px) */}
         <main className="absolute inset-x-0 top-[65px] bottom-[52px] overflow-hidden">
           {children}
         </main>
         <DayTimeline />
-
       </body>
     </html>
   )

@@ -35,7 +35,8 @@ export default function HorizontalScroller({ children }: { children: ReactNode }
   return (
     <div
       ref={ref}
-      className="flex h-full overflow-x-auto overflow-y-hidden"
+      data-h-scroll
+      className="flex h-full overflow-x-auto overflow-y-hidden [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
       style={{ scrollSnapType: 'x mandatory' }}
     >
       {children}
