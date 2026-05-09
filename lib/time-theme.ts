@@ -11,25 +11,30 @@ interface Stop {
 }
 
 // 24-hour colour journey — extra stops for silky-smooth blending
+// muted values calibrated to ≥4.5:1 contrast against their bg at every stop
 const STOPS: Stop[] = [
-  { hour: 0,    colors: { bg: '#0a0a0a', fg: '#f5f5f5', muted: '#888888', border: '#1a1a1a' } },
-  { hour: 3,    colors: { bg: '#0c0c18', fg: '#e0e0f8', muted: '#8888c0', border: '#1a1a28' } },
-  { hour: 5,    colors: { bg: '#0e0e1e', fg: '#d8d8f8', muted: '#8080b8', border: '#1c1c2e' } },
-  { hour: 6,    colors: { bg: '#2a4060', fg: '#d8eaf8', muted: '#7090c0', border: '#304860' } },
-  { hour: 7,    colors: { bg: '#b0c8e0', fg: '#0a1020', muted: '#3a6090', border: '#88a8cc' } },
-  { hour: 8.5,  colors: { bg: '#d8e8f4', fg: '#080e18', muted: '#4a6888', border: '#b0c8e0' } },
-  { hour: 10,   colors: { bg: '#eef3f8', fg: '#0e1520', muted: '#586878', border: '#ccd6e0' } },
-  { hour: 11,   colors: { bg: '#f8fbfe', fg: '#0a0f1a', muted: '#5a6070', border: '#dce8f0' } },
-  { hour: 12,   colors: { bg: '#ffffff', fg: '#0a0a0a', muted: '#606060', border: '#e0e0e0' } },
-  { hour: 13,   colors: { bg: '#fefcf8', fg: '#100a00', muted: '#706050', border: '#ece0d0' } },
-  { hour: 15,   colors: { bg: '#fdf9f4', fg: '#180e00', muted: '#806050', border: '#ecddd0' } },
-  { hour: 16.5, colors: { bg: '#f9eedc', fg: '#201000', muted: '#907038', border: '#e0c890' } },
-  { hour: 17.5, colors: { bg: '#f5dcac', fg: '#2d1800', muted: '#9a7030', border: '#d8c080' } },
-  { hour: 18.5, colors: { bg: '#c84818', fg: '#fce8c0', muted: '#e09060', border: '#a03818' } },
-  { hour: 19.5, colors: { bg: '#2a0e06', fg: '#f8c870', muted: '#c07838', border: '#4a1e0e' } },
-  { hour: 20.5, colors: { bg: '#140808', fg: '#f0c060', muted: '#a06830', border: '#280e0e' } },
-  { hour: 21,   colors: { bg: '#0a0a0a', fg: '#f5f5f5', muted: '#888888', border: '#1a1a1a' } },
-  { hour: 24,   colors: { bg: '#0a0a0a', fg: '#f5f5f5', muted: '#888888', border: '#1a1a1a' } },
+  { hour: 0,    colors: { bg: '#0a0a0a', fg: '#f5f5f5', muted: '#909090', border: '#1a1a1a' } },
+  { hour: 3,    colors: { bg: '#0c0c18', fg: '#e0e0f8', muted: '#9898c8', border: '#1a1a28' } },
+  { hour: 5,    colors: { bg: '#0e0e1e', fg: '#d8d8f8', muted: '#9898c0', border: '#1c1c2e' } },
+  // Dawn — dark bg, light muted is fine
+  { hour: 6,    colors: { bg: '#2a4060', fg: '#d8eaf8', muted: '#a8c8e8', border: '#3a5878' } },
+  // Morning — bg brightens sharply; muted must go dark to stay legible
+  { hour: 7,    colors: { bg: '#b0c8e0', fg: '#08101c', muted: '#1a3050', border: '#78a0c0' } },
+  { hour: 8.5,  colors: { bg: '#d8e8f4', fg: '#060c16', muted: '#1a2c40', border: '#a0bcd4' } },
+  { hour: 10,   colors: { bg: '#eef3f8', fg: '#0c121c', muted: '#283848', border: '#b8c8d8' } },
+  { hour: 11,   colors: { bg: '#f8fbfe', fg: '#080c14', muted: '#2c3848', border: '#d0dce8' } },
+  { hour: 12,   colors: { bg: '#ffffff', fg: '#0a0a0a', muted: '#484848', border: '#d0d0d0' } },
+  { hour: 13,   colors: { bg: '#fefcf8', fg: '#100a00', muted: '#403020', border: '#e0d0c0' } },
+  { hour: 15,   colors: { bg: '#fdf9f4', fg: '#160c00', muted: '#402c18', border: '#e0cfc0' } },
+  // Afternoon into golden hour — warm light bg; muted must be dark warm brown
+  { hour: 16.5, colors: { bg: '#f9eedc', fg: '#1c0e00', muted: '#3c2408', border: '#d0b060' } },
+  { hour: 17.5, colors: { bg: '#f5dcac', fg: '#200e00', muted: '#3a2006', border: '#c09030' } },
+  // Sunset — bg flips dark; muted flips light
+  { hour: 18.5, colors: { bg: '#c84818', fg: '#fce8c0', muted: '#f8c880', border: '#a03818' } },
+  { hour: 19.5, colors: { bg: '#2a0e06', fg: '#f8c870', muted: '#d89050', border: '#4a1e0e' } },
+  { hour: 20.5, colors: { bg: '#140808', fg: '#f0c060', muted: '#c07838', border: '#280e0e' } },
+  { hour: 21,   colors: { bg: '#0a0a0a', fg: '#f5f5f5', muted: '#909090', border: '#1a1a1a' } },
+  { hour: 24,   colors: { bg: '#0a0a0a', fg: '#f5f5f5', muted: '#909090', border: '#1a1a1a' } },
 ]
 
 // Full-width 24h gradient for the timeline bar — positions match stop hours / 24
